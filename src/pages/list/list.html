@@ -1,0 +1,32 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-buttons left>
+        <button ion-button icon-only (click)="onClickCancel()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>List</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+
+
+<ion-content padding>
+
+
+<ion-card *ngFor="let item of items">
+  
+    <ion-card-header>      
+    <span item-left>{{ item.username }}</span>
+    <span item-right> 
+      <div class="pull-right">
+        <ion-icon (click)="takeAction(account.$key)" name="more"></ion-icon>
+      </div>
+    </span>
+    </ion-card-header>
+    <ion-card-content>
+      <h5>Bank: <b>{{ item.username }}</b></h5>
+      <h5>Ac name: <b>{{ item.username }}}</b></h5>
+      <h5>Ac name: <b>{{ item.username }}</b></h5>
+    </ion-card-content>

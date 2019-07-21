@@ -1,0 +1,49 @@
+<ion-content padding class="transparent-header" [ngStyle]="{}">
+	<ion-header no-border>
+		<ion-navbar hideBackButton="true" transparent>
+		</ion-navbar>
+	</ion-header>
+	<div padding>
+		<ion-row>
+			<ion-col class="wave">
+				<h1>Login</h1>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<ion-list inset class="no-border">
+					<ion-item class="animate-in-primary">
+						<ion-input type="text" placeholder="Email" #email></ion-input>
+					</ion-item>
+
+					<ion-item class="animate-in-primary">
+						<ion-input type="password" placeholder="Password" #password></ion-input>
+					</ion-item>
+				</ion-list>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<button ion-button class="login-button bounce" (click)="Login()">Acceder</button>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<div (click)="toForgot()">
+					<p>Olvide mi contrasena.</p>
+				</div>
+			</ion-col>
+		</ion-row>
+		
+		<ion-row>
+			<ion-col>
+				<div (click)="toSignup()">
+					<p>Abrir una cuenta nueva.</p>
+				</div>
+			</ion-col>
+		</ion-row>
+
+	</div>
+</ion-content>
+
